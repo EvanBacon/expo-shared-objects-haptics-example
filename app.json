@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bacon.dec30-convertible-ext"
     },
     "android": {
       "adaptiveIcon": {
