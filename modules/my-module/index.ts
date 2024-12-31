@@ -1,3 +1,5 @@
+// This was AI generated based on the Swift/Kotlin code.
+
 import { NativeModule, requireNativeModule } from "expo";
 
 type HapticEventParameter = {
