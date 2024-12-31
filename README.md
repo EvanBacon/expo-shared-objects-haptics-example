@@ -1,0 +1,3 @@
+This is an example of using convertible extensions in Expo Sweet API + shared objects to create an exhausting binding to part of Apple `CoreHaptics`. This enables you to play with a number of haptic configurations using Fast Refresh and OTA. The majority of the native module was generated with copilot, and the entire TypeScript interface was AI generated.
+
+The purpose of this project is to experiment with a JS-driven approach to native modules which is more backwards compatible as it aligns with the underlying native APIs. The drawback is that it's more verbose, not cross-platform, and requires a lot of binding code—which is mitigated by the use of AI and predictable binding patterns.
