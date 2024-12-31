@@ -79,17 +79,41 @@ public class MyModule: Module {
         Name("MyModule")
         
         Constants([
-            "HapticParameters": [
-                "hapticIntensity": CHHapticEvent.ParameterID.hapticIntensity.rawValue,
-                "hapticSharpness": CHHapticEvent.ParameterID.hapticSharpness.rawValue,
-                "attackTime": CHHapticEvent.ParameterID.attackTime.rawValue,
-                "decayTime": CHHapticEvent.ParameterID.decayTime.rawValue,
-                "releaseTime": CHHapticEvent.ParameterID.releaseTime.rawValue,
-                "sustained": CHHapticEvent.ParameterID.sustained.rawValue,
-                "audioVolume": CHHapticEvent.ParameterID.audioVolume.rawValue,
-                "audioPitch": CHHapticEvent.ParameterID.audioPitch.rawValue,
-                "audioPan": CHHapticEvent.ParameterID.audioPan.rawValue,
-                "audioBrightness": CHHapticEvent.ParameterID.audioBrightness.rawValue
+            "CHHapticEvent": [
+                "ParameterID": [
+                    "hapticIntensity": CHHapticEvent.ParameterID.hapticIntensity.rawValue,
+                    "hapticSharpness": CHHapticEvent.ParameterID.hapticSharpness.rawValue,
+                    "attackTime": CHHapticEvent.ParameterID.attackTime.rawValue,
+                    "decayTime": CHHapticEvent.ParameterID.decayTime.rawValue,
+                    "releaseTime": CHHapticEvent.ParameterID.releaseTime.rawValue,
+                    "sustained": CHHapticEvent.ParameterID.sustained.rawValue,
+                    "audioVolume": CHHapticEvent.ParameterID.audioVolume.rawValue,
+                    "audioPitch": CHHapticEvent.ParameterID.audioPitch.rawValue,
+                    "audioPan": CHHapticEvent.ParameterID.audioPan.rawValue,
+                    "audioBrightness": CHHapticEvent.ParameterID.audioBrightness.rawValue
+                ],
+                "EventType": [
+                    "hapticTransient": CHHapticEvent.EventType.hapticTransient.rawValue,
+                    "hapticContinuous": CHHapticEvent.EventType.hapticContinuous.rawValue,
+                    "audioContinuous": CHHapticEvent.EventType.audioContinuous.rawValue,
+                    "audioCustom": CHHapticEvent.EventType.audioCustom.rawValue
+                ]
+            ],
+            "CHHapticDynamicParameter": [
+                "ID": [
+                    "hapticIntensityControl": CHHapticDynamicParameter.ID.hapticIntensityControl.rawValue,
+                    "hapticSharpnessControl": CHHapticDynamicParameter.ID.hapticSharpnessControl.rawValue,
+                    "hapticAttackTimeControl": CHHapticDynamicParameter.ID.hapticAttackTimeControl.rawValue,
+                    "hapticDecayTimeControl": CHHapticDynamicParameter.ID.hapticDecayTimeControl.rawValue,
+                    "hapticReleaseTimeControl": CHHapticDynamicParameter.ID.hapticReleaseTimeControl.rawValue,
+                    "audioVolumeControl": CHHapticDynamicParameter.ID.audioVolumeControl.rawValue,
+                    "audioPitchControl": CHHapticDynamicParameter.ID.audioPitchControl.rawValue,
+                    "audioPanControl": CHHapticDynamicParameter.ID.audioPanControl.rawValue,
+                    "audioBrightnessControl": CHHapticDynamicParameter.ID.audioBrightnessControl.rawValue,
+                    "audioAttackTimeControl": CHHapticDynamicParameter.ID.audioAttackTimeControl.rawValue,
+                    "audioDecayTimeControl": CHHapticDynamicParameter.ID.audioDecayTimeControl.rawValue,
+                    "audioReleaseTimeControl": CHHapticDynamicParameter.ID.audioReleaseTimeControl.rawValue
+                ]
             ]
         ])
         

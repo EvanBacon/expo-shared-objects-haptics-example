@@ -48,18 +48,43 @@ export declare class HapticEngine {
 
 declare class MyModuleType extends NativeModule {
   // Constants
-  /** Haptic parameters available for configuration. */
-  HapticParameters: {
-    hapticIntensity: string;
-    hapticSharpness: string;
-    attackTime: string;
-    decayTime: string;
-    releaseTime: string;
-    sustained: string;
-    audioVolume: string;
-    audioPitch: string;
-    audioPan: string;
-    audioBrightness: string;
+  /** Haptic event parameter IDs available for configuration. */
+  CHHapticEvent: {
+    ParameterID: {
+      hapticIntensity: string;
+      hapticSharpness: string;
+      attackTime: string;
+      decayTime: string;
+      releaseTime: string;
+      sustained: string;
+      audioVolume: string;
+      audioPitch: string;
+      audioPan: string;
+      audioBrightness: string;
+    };
+    EventType: {
+      hapticTransient: string;
+      hapticContinuous: string;
+      audioContinuous: string;
+      audioCustom: string;
+    };
+  };
+  /** Haptic dynamic parameter IDs available for configuration. */
+  CHHapticDynamicParameter: {
+    ID: {
+      hapticIntensityControl: string;
+      hapticSharpnessControl: string;
+      hapticAttackTimeControl: string;
+      hapticDecayTimeControl: string;
+      hapticReleaseTimeControl: string;
+      audioVolumeControl: string;
+      audioPitchControl: string;
+      audioPanControl: string;
+      audioBrightnessControl: string;
+      audioAttackTimeControl: string;
+      audioDecayTimeControl: string;
+      audioReleaseTimeControl: string;
+    };
   };
   // Shared objects
   HapticEngine: typeof HapticEngine;

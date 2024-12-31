@@ -43,14 +43,14 @@ function playPattern(
     events: [
       // let event = CHHapticEvent(eventType: .hapticTransient, parameters: [intensityParameter, sharpnessParameter], relativeTime: 0)
       {
-        eventType: "HapticTransient",
+        eventType: MyModule.CHHapticEvent.EventType.hapticTransient,
         parameters: [
           {
-            parameterID: MyModule.HapticParameters.hapticIntensity,
+            parameterID: MyModule.CHHapticEvent.ParameterID.hapticIntensity,
             value: intensity,
           },
           {
-            parameterID: MyModule.HapticParameters.hapticSharpness,
+            parameterID: MyModule.CHHapticEvent.ParameterID.hapticSharpness,
             value: sharpness,
           },
         ],
