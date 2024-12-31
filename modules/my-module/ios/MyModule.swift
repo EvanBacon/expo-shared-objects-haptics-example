@@ -161,8 +161,9 @@ class HapticEngine: SharedObject {
             throw EngineNotStartedException()
         }
         
+        let player = try engine.makePlayer(with: pattern)
+        
         if #available(iOS 16.0, *) {
-            let player = try engine.makePlayer(with: pattern)
             try player.start(atTime: 0)
         } else {
             // Fallback on earlier versions
